@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- meta tags -->
+  <title>Twitter</title>
+  <!-- Bootstrap's CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link href="css/twitter.css" rel="stylesheet">
+</head>
+<body>
+  <!--navbar-->
+  <nav class="navbar navbar-fixed-top twitter-navbar grey-background">
+    <div class="container">
+      <!-- This code is only active when viewing the site on mobile. We will not
+      cover responsive design, but we'll leave this in, as it's part of the
+      example code.-->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed.navbar-btn" data-toggle="collapse"
+        data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+  </div>
+  <!-- On mobile, this div is hidden by default. The user hits the button
+  in the `navbar-header` to see the content of the div.
+  On desktop, this div is visible all of the time. -->
+  <!-- Left-aligned items. -->
+  <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+    <!--Home-->
+      <button type="button" class="btn twitter-btn">
+        <span class="glyphicon glyphicon-home"></span>
+        Home
+      </button>
+    <!--Moments-->
+      <button type="button" class="btn twitter-btn">
+        <span class="glyphicon glyphicon-flash"></span>
+        Moments
+      </button>
+    <!--Notifications-->
+      <button type="button" class="btn twitter-btn">
+        <span class="glyphicon glyphicon-bell"></span>
+        Notifications
+      </button>
+    <!--Messages-->
+      <button type="button" class="btn twitter-btn">
+        <span class="glyphicon glyphicon-envelope"></span>
+        Messages
+      </button>
+    <!-- Right-aligned items -->
+    <div class="nav navbar-nav navbar-right">
+      <form class="navbar-form navbar-left" role="search">
+        <div class="input-group">
+          <input type="text" class="form-control fb-search" placeholder="Search Twitter">
+          <span class="input-group-btn">
+            <button type="submit" class="btn btn-default">
+              <span class="glyphicon glyphicon-search"></span>
+            </button>
+          </span>
+        </div>
+      </form>
+      <div class="btn-toolbar pull-right" role="toolbar">
+        <div class="btn-group" role="group">
+          <button type="button" class="btn btn-default navbar-btn">
+            <span class="glyphicon glyphicon-edit"></span>
+            Tweet
+          </button>
+        </div>
+    </div>
+      <div class="btn-toolbar pull-right" role="toolbar">
+        <div class="btn-group" role="group">
+          <button type="button" class="btn btn-default navbar-btn">
+            PIC
+          </button>
+        </div>
+    </div>
+  </div>
+  </div><!-- /.navbar-collapse -->
+  </div><!-- /.container -->
+  </nav>
+  <!--layout-->
+  <div class="container">
+    <!-- The row that contains the three main columns of the website. -->
+    <div class="row">
+      <!-- Left sidebar: A cell that spans 2 columns -->
+      <div class="col-md-2">
+      </div>
+      <!-- Main feed: A cell that spans 7 columns -->
+      <div class="col-md-7">
+        <!-- Status update #1 -->
+        <div class="panel twitter-post">
+          <div class="panel-body">
+            <!-- Post metadata -->
+            <div class="row">
+              <div class="col-md-1">
+                <div class="media-left media-top">
+                  PIC
+                </div>
+              </div>
+              <div class="col-md-1">
+                <div class="media-left media-top">
+                  <a href="#">NASA</a>
+                  <br> @NASA
+                </div>
+              </div>
+              <div class="col-md-10">
+                <button type="button" class="btn btn-default navbar-btn pull-right">
+                  <span class="glyphicon glyphicon-asterisk"></span>
+                  | Following
+                </button>
+              </div>
+            <!-- Post content -->
+            <div class="row">
+              <div class="col-md-12">
+                This spiral galaxy hosts a supermassive black hole that's also super hungry:
+                <br> <a href="#">http://go.nasa.gov/1Rp6V2w</a> <a href="#">@NASA_Hubble</a>
+                <img src="img/blackhole.jpg" width="100%" />
+                <hr>
+                <div class="row">
+                  <div class="col-md-2">
+                    <div class="pull-left">
+                      Retweets
+                      <br> 1,747
+                    </div>
+                  </div>
+                    <div class="col-md-2">
+                      <div class="pull-left">
+                        Likes
+                        <br> 2,911
+                    </div>
+                  </div>
+                  <div class="col-md-8">
+                    <div class="text-center">
+                      <a href="#">PIC</a>
+                      <a href="#">PIC</a>
+                      <a href="#">PIC</a>
+                      <a href="#">PIC</a>
+                      <a href="#">PIC</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+                <hr>
+                <div class="row">
+                  <div class="col-md-12">
+                    12:44pm - 8 Jan 2016
+                  </div>
+                  <div class="col-md-12">
+                    <ul class="list-inline">
+                      <li>
+                        <a href="#"><span class="glyphicon glyphicon-arrow-left">
+                      </li>
+                      <li>
+                        <a href="#"><span class="glyphicon glyphicon-refresh">
+                      </li>
+                      <li>
+                        <a href="#"><span class="glyphicon glyphicon-heart">
+                      </li>
+                      <li>
+                        <a href="#"><span class="glyphicon glyphicon-option-horizontal">
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <hr>
+                <div class="row">
+                  <div class="col-md-1">
+                    PIC
+                  </div>
+                  <div class="col-md-10">
+                    <textarea class="form-control" rows="1"
+                    placeholder="Reply to @NASA @NASA_Hubble"></textarea>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr>
+        </div>
+      </div>
+      <!-- Right sidebar: A cell that spans 3 columns -->
+      <div class="col-md-3">
+      </div>
+    </div>
+  </div>
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="js/jquery.min.js"></script>
+  <!-- Include all compiled plugins (below),
+  or include individual files as needed -->
+  <script src="js/bootstrap.min.js"></script>
+</body>
+</html>
